@@ -1,6 +1,6 @@
 # Collection Asset ID Extraction Tool
 
-## Project stricture:
+## Project structure:
 ```bash
 .
 ├── Readme.md
@@ -17,21 +17,21 @@ For collection asset extraction from https://algoxnft.com/
 Example collection: https://algoxnft.com/full-collection/cheap-berd-cash-grab
 
 ## TO Run:
-1. ts-node must be globally installed
-2. Put a file with the page HTML to the `./lib/ folder
+> `ts-node` must be globally installed!
+1. Put a file with the page HTML to the `./lib/ folder
 Example:
 ```bash
 ├── lib
 │   └── abcg.html
 ```
-3. Set `collectionName` to the file name in `./scr/index.ts` line #3
+2. Set `collectionName` to the file name in `./scr/index.ts` line #3
 
 Example:
 ```ts
 const collectionName: string = "abcg";
 ```
 
-4. To start run in console: 
+3. To start, run in console: 
 
 ```bash
 ts-node ./src/index.ts
