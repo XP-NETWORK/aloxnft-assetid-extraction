@@ -16,7 +16,7 @@ For collection asset extraction from https://algoxnft.com/
 
 Example collection: https://algoxnft.com/full-collection/cheap-berd-cash-grab
 
-## TO Run:
+## To Run:
 > `ts-node` must be globally installed!
 1. Put a file with the page HTML to the `./lib/ folder
 Example:
@@ -39,7 +39,14 @@ ts-node ./src/index.ts
 
 ## Output
 
-You will get a `.txt` file with the coma-separated asset IDs.
+In the terminal you will get a message similar to this:
+
+```bash
+Found 1000 unique assets. Saved to: ./abcg.txt
+```
+Where `1000` is the number of found unique asset ids.
+
+`./abcg.txt` is the file where the comma-separated asset ids were saved like this:
 
 Example:
 
